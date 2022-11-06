@@ -4,8 +4,13 @@ import (
 	"context"
 	"flag"
 	"fmt"
+<<<<<<< HEAD
 	"google.golang.org/grpc"
 	pb "grpc_hello/api"
+=======
+	pb "github.com/yangyang5214/gogogo/grpc_hello/api/hello"
+	"google.golang.org/grpc"
+>>>>>>> f2cf6ee (add hello proto)
 	"log"
 	"net"
 )

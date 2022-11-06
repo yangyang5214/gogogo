@@ -1,7 +1,11 @@
 syntax = "proto3";
 
 package grpc_hello;
+<<<<<<< HEAD
 option go_package = "github.com/gogogo/grpc_hello/api/hello";
+=======
+option go_package = "github.com/yangyang5214/gogogo/grpc_hello/api/hello";
+>>>>>>> f2cf6ee (add hello proto)
 
 
 service Greeter {
