@@ -4,13 +4,8 @@ import (
 	"context"
 	"flag"
 	"fmt"
-<<<<<<< HEAD
+	pb "github.com/yangyang5214/protos/examples"
 	"google.golang.org/grpc"
-	pb "grpc_hello/api"
-=======
-	pb "github.com/yangyang5214/gogogo/grpc_hello/api/hello"
-	"google.golang.org/grpc"
->>>>>>> f2cf6ee (add hello proto)
 	"log"
 	"net"
 )
@@ -25,7 +20,7 @@ type server struct {
 
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
 	log.Printf("Received: %v", in.GetName())
-	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil
+	return &pb.HelloReply{Msg: "Hello " + in.GetName()}, nil
 }
 
 func main() {
