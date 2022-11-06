@@ -1,5 +1,3 @@
-
-
 > About learn golang...
 
 # flag
@@ -30,7 +28,7 @@ func main() {
 - 运行
 
 ```go
-➜  _flag git:(main) ✗ go run main.go           
+➜  _flag git:(main) ✗ go run main.go
 server port is: 5300
 ➜  _flag git:(main) ✗ go run main.go -port 3000
 server port is: 3000
@@ -39,9 +37,9 @@ server port is: 3000
 - help
 
 ```go
-➜  _flag git:(main) ✗ go run main.go -h        
-  -port int
-        server port (default 5300)
+➜  _flag git:(main) ✗ go run main.go -h
+-port int
+server port (default 5300)
 ```
 
 
